@@ -1,7 +1,7 @@
 ## Caching the Inverse of a Matrix
 
 ## The Function makeCacheMatrix has:
-## INPUT: 1 Matrix
+## INPUT: 1 Matrix (Assumed Invertible)
 ## OUTPUT: A list of 4 functions that will:
 ##              set(y) - Sets the matrix Value as y
 ##              get() - Get the Matrix X
@@ -29,7 +29,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## This Function Checks if the inverse of the Matrix has been cached
 ## If so it returns that value (without recalculating), 
 ## if not it will calculate it and cache it using the makeCacheMatrix function
-## INPUT: 1 Matrix (Assumed Invertible)
+## INPUT: 1 makeCacheMatrix (Result of using the function makeCacheMatrix with the Matrix)
 ## OUTPUT: the inverse of the Matrix
 
 cacheSolve <- function(x, ...) {
@@ -44,3 +44,6 @@ cacheSolve <- function(x, ...) {
   x$setinverse(inv)
   inv
 }
+
+
+
