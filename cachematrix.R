@@ -1,8 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-setwd("C:/Users/bellelid/Desktop/Classes/Data Science Specialization/Programming in R/03 - Week 3")
-
 ## Caching the Inverse of a Matrix
 
 ## The Function makeCacheMatrix has:
